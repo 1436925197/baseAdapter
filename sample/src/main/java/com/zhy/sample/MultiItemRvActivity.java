@@ -54,7 +54,7 @@ public class MultiItemRvActivity extends AppCompatActivity
                         boolean coming = Math.random() > 0.5;
                         ChatMessage msg = null;
                         msg = new ChatMessage(coming ? R.drawable.renma : R.drawable.xiaohei, coming ? "人马" : "xiaohei", "where are you " + mDatas.size(),
-                                null, coming);
+                                null, 3);
                         mDatas.add(msg);
                         mLoadMoreWrapper.notifyDataSetChanged();
 

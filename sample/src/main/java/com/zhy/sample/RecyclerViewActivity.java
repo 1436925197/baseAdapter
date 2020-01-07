@@ -43,8 +43,8 @@ public class RecyclerViewActivity extends AppCompatActivity
         initDatas();
 
         mRecyclerView = (RecyclerView) findViewById(R.id.id_recyclerview);
-//        mRecyclerView.setHasFixedSize(true);
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        mRecyclerView.setHasFixedSize(true);
+//        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mRecyclerView.setLayoutManager(new GridLayoutManager(this, 2));
 //        mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
         mRecyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL_LIST));
